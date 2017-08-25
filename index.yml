@@ -1,6 +1,7 @@
 services:
 - amazon-ecs-agent
 - crontab
+- open-iscsi
 - kernel-extras
 - kernel-headers
 - kernel-headers-system-docker
@@ -8,6 +9,8 @@ services:
 - rancher-server
 - rancher-server-stable
 - zfs
+- amazon-metadata
+- volume-netshare
 consoles:
 - alpine
 - centos
@@ -15,10 +18,10 @@ consoles:
 - fedora
 - ubuntu
 engines:
-- docker-1.10.3
-- docker-1.11.2
 - docker-1.12.6
 - docker-1.13.1
 - docker-17.03.1-ce
+- docker-17.03.2-ce
 - docker-17.04.0-ce
 - docker-17.05.0-ce
+- docker-17.06.1-ce
